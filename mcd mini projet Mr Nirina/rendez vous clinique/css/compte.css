@@ -1,0 +1,40 @@
+body{
+    font-family: Arial;
+    font-size:14px;
+    background-color: rgb(195, 195, 195, 0.3);
+}
+form{
+    width:450px;
+    padding: 50px 70px;
+    margin: 0px auto;
+    background-color:white;
+    box-shadow: 0px 0px 1px white;
+}
+
+form[action="profile.php"]{
+    margin-top: 100px;
+    width:200px;
+}
+
+form[action="profile.php"] .submit{
+    text-align:center;
+}
+
+.submit{
+    margin-top: 30px;
+}
+
+p input{
+    border: 1px solid white;
+    border-bottom-color:black;
+    height: 32px;
+    width: 200px;
+}
+
+label{
+    font-weight: bold;
+}
+
+.uneligne p{
+    display: inline-block;
+}
