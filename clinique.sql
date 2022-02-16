@@ -2,7 +2,8 @@
 SQLyog Ultimate v11.11 (64 bit)
 MySQL - 5.5.5-10.4.14-MariaDB : Database - clinique
 *********************************************************************
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -99,7 +100,7 @@ DROP TABLE IF EXISTS `rdv`;
 
 CREATE TABLE `rdv` (
   `id_rdv` int(11) NOT NULL AUTO_INCREMENT,
-  `jour` date DEFAULT curdate(),
+  `jour` date,
   `heure_fin` time NOT NULL,
   `heure_debut` time NOT NULL,
   PRIMARY KEY (`id_rdv`)
