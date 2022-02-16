@@ -5,9 +5,7 @@ puis verifier et traiter ici avant des les renvoyés vers les pages respectives.
 <?php
     //header('Location:profile.php?pseudo='.$_POST['pseudo']?? ($_GET['pseudo'] ?? $_SESSION['pseudo']).'&code_='.$_POST['code_']??$_GET['code_']);
     session_start();
-    include_once "C:/xampp/htdocs/rendez vous clinique/classes/client.class.php";
-    include_once "C:/xampp/htdocs/rendez vous clinique/classes/compte.class.php";
-    include_once "C:/xampp/htdocs/rendez vous clinique/classes/personne.class.php";
+    
     
     /*$c= Comptes::requete('SELECT pseudo FROM compte where pseudo = :pseudo');
     $c->execute(    ['pseudo' => $_POST['pseudo'] ?? $_SESSION['pseudo']]);
@@ -48,5 +46,5 @@ if(isset($_SESSION['id'])){
     echo '<p>Numéro de rendez-vous: '.$result['id_rdv'];
 }         
 ?>
-<p><a href="indexa.php">Acceuil</a></p>
+<p><a href="index.php">Acceuil</a></p>
 <P><a href="profile.php?pseudo=<?= $_SESSION['pseudo'] ?>&code_=<?= $_SESSION['code'] ?>">Mon compte</a></p>

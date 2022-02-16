@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="css/calendrier.css">
 <?php
-    include 'classes/semaine.class.php';
 
     try{
         $month = new Month($_GET['m'] ?? NULL, $_GET['y'] ?? NULL);
@@ -23,11 +22,11 @@
 ?>
 
 <p class="lien">
-    <a href="indexa.php?w= <?=$week->current<2 ? $week->last+1:intval(($week->current)-1); ?>&m=<?= $week->current<2? $week->ref_month->prev_month()->intMonth:$week->ref_month->intMonth;?>&y=<?=$week->current<2? $week->ref_month->prev_month()->year:$month->year; ?>">
+    <a href="index.php?w= <?=$week->current<2 ? $week->last+1:intval(($week->current)-1); ?>&m=<?= $week->current<2? $week->ref_month->prev_month()->intMonth:$week->ref_month->intMonth;?>&y=<?=$week->current<2? $week->ref_month->prev_month()->year:$month->year; ?>">
         <?php if(intval($tab_maintenant[1]) <= intval($tab_limite[1])): echo 'précedent |'; endif; ?>
     </a>
     <p class="mois"><?= $month->to_string(); ?></p>
-    <a href="indexa.php?w=<?=$week->current< ($week->last)-1 ? intval(($week->current)+1): 1;?>&m=<?= $week->current<($week->last)-1? $month->intMonth: $week->ref_month->next_month()->intMonth;?>&y=<?= $week->current<($week->last)-1? $month->year: $month->next_month()->year;?>">| suivant</a>
+    <a href="index.php?w=<?=$week->current< ($week->last)-1 ? intval(($week->current)+1): 1;?>&m=<?= $week->current<($week->last)-1? $month->intMonth: $week->ref_month->next_month()->intMonth;?>&y=<?= $week->current<($week->last)-1? $month->year: $month->next_month()->year;?>">| suivant</a>
 </p>
 
 <table>

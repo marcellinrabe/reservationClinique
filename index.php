@@ -1,5 +1,15 @@
-<?php declare(strict_types= 1); 
-session_start();
+<?php
+
+    declare(strict_types= 1); 
+    session_start();
+
+    # import all classes 
+    spl_autoload_register(function($classe){
+        require 'classes/' .$classe. '.class.php';
+    });
+
+
+
 // tokony dans tout les pages le fonction connexion[@db]() mila accessible, de nataoko any @fichier "personne.class.php" aloha ilay izy
 ?>
 <!DOCTYPE html>
@@ -52,7 +62,7 @@ session_start();
 
         <section class="consultation">
             <h1 id="consultation" >Rechercher votre horaire de rendez-vous</h1>
-            <form action="indexa.php" method="post">
+            <form action="index.php" method="post">
                 <input type="search" placeholder="le numéro de votre rendez-vous ex:RDV1" name="recherche" id="recherche">
                 <input type="submit" value="rechercher">
                 <div class="errorSearch">

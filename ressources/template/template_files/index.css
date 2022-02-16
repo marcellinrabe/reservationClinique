@@ -1,0 +1,143 @@
+/* nalahatro araka ny filahatra ny balise ny css, akotran'ireo propriété matetika
+    miverina izay nataoko @farany ambony aty 
+color={rgb(58,198,97) pour le vert), rgba(195, 195, 195, 0.3) pour le cadre des listes des docteurs}
+
+*/
+
+body{
+    font-family: Arial;
+    font-size:14px;
+    background-color: rgb(195, 195, 195, 0.3);
+}
+
+.blocPage{
+    width:1200px;
+    margin:auto;
+    background-color: white;
+}
+
+
+/* ----- animation pour l'objet information du docteur ----- */
+.doctor_side{
+    display: inline-block;
+    margin: 0px 20px;
+    background-image: linear-gradient(to bottom, rgb(58,198,97), white);
+}
+
+.docImg{
+    margin:10px; 
+    width:200px;
+    height:200px;
+    float:right;
+    box-shadow: 0px 0px 1px rgba(58,198,97);
+}
+
+.doctor_side h1{
+    clear:right;
+}
+/* --------------------------------------------------------- */
+
+.forDocList{
+    border:black solid 1px;
+}
+.reservation, .consultation, .forDocList{
+    margin:100px 50px;
+}
+
+.background{
+    background: no-repeat url('../images/background.jpg');
+    height: 500px;
+    background-size: 100% auto;
+}
+header nav{
+    width: 500px;
+    text-align:center;
+    margin: 0px auto;
+    padding-top: 20px;
+
+}
+header nav a{
+    color: white;
+    padding: 2px 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.grandTitre{
+    clear:right;
+    padding-top: 0px;
+    font-size:24px;
+    color: rgb(58,198,97);
+    margin-left:20px;
+}
+
+.options{
+    width:400px;
+    margin:100px auto;
+    padding: 10px 30px 35px 30px;
+    box-shadow: 0px 0px 1px black;
+}
+
+.options h2{
+    text-align:center;
+}
+
+.options a{
+    color: rgba(255, 0, 0);
+}
+
+.options a:hover{
+    border-bottom: 1px solid red;
+}
+.options a[href="#consultation"]{
+    float:right;
+}
+
+.forDocList{
+    clear:right;
+    margin:100px 50px;
+    padding: 5px 50px; 
+    border-radius: 5px;
+    border: rgb(195, 195, 195, 0.3) solid 1px;
+    background : rgb(195, 195, 195, 0.3);
+}
+
+
+/*------------Manomboka eto ny mis en page ny reservation de rendez-vous ------------------*/
+
+.reservation, .consultation{
+    text-align:center;
+}
+
+.reservation h1, .consultation h1{
+    font-size: 36px;
+}
+
+.errorSearch{
+    width:300px;
+    margin:auto;
+}
+
+footer{
+    background: rgb(58,198,97);
+    height:200px;
+}
+
+footer a{
+    float:right;
+    padding: 10px 50px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer p{
+    position:relative;
+    top:150px;
+    left:525px;
+    color:white;
+}
+
+footer a:hover{
+    border-bottom: 1px solid white;
+}

@@ -1,6 +1,5 @@
 <?php
     session_start();
-    include "classes/compte.class.php";
     $pseudo = $_POST['pseudo'] ?? $_GET['pseudo'];
     $code = $_POST['code_'] ?? $_SESSION['code_'];
 
@@ -48,7 +47,7 @@ $_SESSION['code_'] = $code;
     <link rel="stylesheet" href="css/profile.css">
 </head>
 <body>
-    <a href="indexa.php?id=<?= $_SESSION['id']?>"> prendre rendez-vous </a>
+    <a href="index.php?id=<?= $_SESSION['id']?>"> prendre rendez-vous </a>
     <!-- code html
     mi afficher informations 
     image
