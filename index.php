@@ -5,7 +5,7 @@
 
     # import all classes 
     spl_autoload_register(function($classe){
-        require 'classes/' .$classe. '.class.php';
+        require 'src/classes/' .$classe. '.class.php';
     });
 
 
@@ -25,8 +25,6 @@
 <body>
     <div class="blocPage">
         <header>
-            <?php include "classes/personne.class.php";?>
-            <?php include "classes/docteur.class.php";?>
 
             <div class="background">
                 <nav> <!-- (1) -->

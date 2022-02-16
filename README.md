@@ -6,7 +6,7 @@
 >    mysql> exit 
 > </p><p>bye</p>
 
-> <p>{username}@{user}:{path/}$ sudo mysql {database} < ressources/database/clinique.sql<p>
+> <p>{username}@{user}:{path/}$ sudo mysql {database} < assets/database/clinique.sql<p>
 
 # launching
 
